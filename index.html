@@ -298,7 +298,59 @@
     </div>
   </footer>
 
+  <!-- Modal untuk menampilkan gambar -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Project Image">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
 
+  <script>
+    // Membuat tombol portfolio aktif
+    document.addEventListener('DOMContentLoaded', function() {
+      const projectLinks = document.querySelectorAll('.project-card__link');
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalDescription = document.getElementById('modalDescription');
+      const closeBtn = document.querySelector('.close');
+
+      projectLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const projectCard = this.closest('.project-card');
+          const imageDiv = projectCard.querySelector('.project-card__image');
+          const title = projectCard.querySelector('h3').textContent;
+          const description = projectCard.querySelector('p').textContent;
+          
+          // Ambil URL gambar dari background-image
+          const bgImage = window.getComputedStyle(imageDiv).backgroundImage;
+          const imageUrl = bgImage.slice(5, -2); // Hapus url(" dan ")
+          
+          modalImage.src = imageUrl;
+          modalImage.alt = title;
+          modalTitle.textContent = title;
+          modalDescription.textContent = description;
+          modal.style.display = 'flex';
+        });
+      });
+
+      // Tutup modal saat klik close
+      closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+
+      // Tutup modal saat klik di luar
+      window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    });
+  </script>
  
 </body>
 </html>
