@@ -282,7 +282,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px 32px;
+  padding: 100px 32px 48px;
   position: relative;
   overflow: hidden;
 }
@@ -551,6 +551,11 @@ a {
   .hamburger {
     display: flex;
     order: 2; /* letakkan setelah logo */
+  }
+
+  .navbar__cta {
+    display: flex !important; /* tampilkan Hire Me di mobile */ 
+    order: 1;/* tampilkan Hire Me di mobile */
   }
 
   .navbar__links {
