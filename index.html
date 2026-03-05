@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>praktikum minggu 3- layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ── NAVBAR ─────────────────────── -->
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <span class="logo-icon">&#9670;</span>
+      <span class="logo-text">Rendy dev</span>
+    </div>
+
+    <ul class="navbar__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="navbar__cta">
+      <a href="#" class="btn-primary">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO SECTION ────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <span class="hero__badge">Available for Work</span>
+      <h1 class="hero__title">
+        Hi, saya <span class="highlight">Rendy febriansyah</span><br>
+        Web Developer
+      </h1>
+      <p class="hero__desc">
+        Saya membangun website yang cepat, responsif, dan  profesional.
+        Mari buat sesuatu yang luar biasa bersama.
+      </p>
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PERSONAL DATA ──────────────── -->
+  <section class="personal-data" id="about">
+    <div class="personal-data__container">
+      <div class="personal-data__photo">
+        <img src="assets/rendy.jpeg" alt="Rendy" class="personal-data__img">
+      </div>
+      <div class="personal-data__info">
+        <h2 class="personal-data__name">Rendy Febriansyah</h2>
+        <p class="personal-data__title">Web Developer</p>
+        <p class="personal-data__desc">Halo nama saya Rendy Febriansyah. Saya lahir di Bandar Setia pada 8 Februari 2004. Saya adalah seorang web developer profesional dengan passion dalam membuat website yang cepat, responsif, dan profesional. Saat ini saya berkuliah di Universitas Muhammadiyah Sumatera Utara dengan jurusan Sistem Informasi. Saya berdedikasi untuk terus belajar dan mengembangkan skill dalam dunia web development.</p>
+        <div class="personal-data__details">
+          <p><strong>Email:</strong> febriansyahrendy790@gmail.com</p>
+          <p><strong>Telepon/ WhatsApp:</strong> +62 895404944262</p>
+          <p><strong>Lokasi:</strong> Medan, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS SECTION ──────────────── -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Keahlian Saya</h2>
+      <p class="section-subtitle">Teknologi yang saya kuasai</p>
+
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">&#128195;</div>
+            <h3>HTML5</h3>
+          </div>
+          <p class="skill-card__description">Semantic markup, aksesibilitas, dan struktur dokumen yang baik.</p>
+          <div class="skill-card__proficiency">
+            <div class="proficiency-header">
+              <span class="proficiency-label">Persentase</span>
+              <span class="proficiency-percent">95%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">&#127912;</div>
+            <h3>CSS3</h3>
+          </div>
+          <p class="skill-card__description">Flexbox, Grid, animasi, dan responsive design untuk semua layar.</p>
+          <div class="skill-card__proficiency">
+            <div class="proficiency-header">
+              <span class="proficiency-label">Persentase</span>
+              <span class="proficiency-percent">90%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">&#9889;</div>
+            <h3>JavaScript</h3>
+          </div>
+          <p class="skill-card__description">DOM manipulation, Fetch API, dan logika interaktif modern.</p>
+          <div class="skill-card__proficiency">
+            <div class="proficiency-header">
+              <span class="proficiency-label">Persentase</span>
+              <span class="proficiency-percent">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">&#128279;</div>
+            <h3>Git & GitHub</h3>
+          </div>
+          <p class="skill-card__description">Version control, branching, dan kolaborasi tim secara profesional.</p>
+          <div class="skill-card__proficiency">
+            <div class="proficiency-header">
+              <span class="proficiency-label">Persentase</span>
+              <span class="proficiency-percent">88%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">&#128640;</div>
+            <h3>React</h3>
+          </div>
+          <p class="skill-card__description">Component-based development dengan hooks dan state management.</p>
+          <div class="skill-card__proficiency">
+            <div class="proficiency-header">
+              <span class="proficiency-label">Persentase</span>
+              <span class="proficiency-percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon">⚡</div>
+            <h3>Web Performance</h3>
+          </div>
+          <p class="skill-card__description">Optimasi loading, image compression, dan Core Web Vitals.</p>
+          <div class="skill-card__proficiency">
+            <div class="proficiency-header">
+              <span class="proficiency-label">Persentase</span>
+              <span class="proficiency-percent">82%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 82%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO SECTION ───────────── -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Portfolio Saya</h2>
+      <p class="section-subtitle">Beberapa project yang telah saya kerjakan</p>
+
+      <div class="portfolio__grid">
+        <div class="project-card">
+          <div class="project-card__image" style="background-image: url('assets/e commerce.jpeg'); background-size: cover; background-position: center;"></div>
+          <div class="project-card__content">
+            <h3>E-Commerce Website</h3>
+            <p>Platform belanja online dengan shopping cart dan payment gateway integration.</p>
+            <div class="project-card__tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="#" class="project-card__link">Lihat Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__image" style="background-image: url('assets/task management app.jpeg'); background-size: cover; background-position: center;"></div>
+          <div class="project-card__content">
+            <h3>Task Management App</h3>
+            <p>Aplikasi manajemen tugas dengan fitur prioritas, deadline, dan notifikasi real-time.</p>
+            <div class="project-card__tags">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS3</span>
+            </div>
+            <a href="#" class="project-card__link">Lihat Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__image" style="background-image: url('assets/weather.jpeg'); background-size: cover; background-position: center;"></div>
+          <div class="project-card__content">
+            <h3>Weather Dashboard</h3>
+            <p>Dashboard cuaca real-time dengan integrasi API, animasi smooth, dan responsive design.</p>
+            <div class="project-card__tags">
+              <span>JavaScript</span>
+              <span>API</span>
+              <span>CSS3</span>
+            </div>
+            <a href="#" class="project-card__link">Lihat Project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT SECTION ────────────────── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Mari Bekerja Sama</h2>
+      <p class="section-subtitle">Hubungi saya untuk diskusi project atau peluang kolaborasi</p>
+
+      <div class="contact__wrapper">
+        <div class="contact__info">
+          <div class="contact-item">
+            <div class="contact-item__icon">📧</div>
+            <h3>Email</h3>
+            <p><a href="mailto:febriansyahrendy790@gmail.com">febriansyahrendy790@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">📱</div>
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/62895404944262">+62 895-404-944-262</a></p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">🔗</div>
+            <h3>Social Media</h3>
+            <div class="social-links">
+              <a href="https://github.com/Rendy" class="social-link">GitHub</a>
+              <a href="https://www.instagram.com/rndyf08?igsh=MnUzcjF5dnYzOHdr" class="social-link">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-danger btn-large">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">&#9670; rendy dev</span>
+        <p class="footer__copy">
+          &copy; 2026 Rendy febriansyah.
+        </p>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+ 
+</body>
+</html>
