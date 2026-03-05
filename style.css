@@ -192,6 +192,39 @@ a {
   font-size: 1.5rem;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  padding: 8px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: 0.3s;
+  transform-origin: center;
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
 /* Menu Links */
 .navbar__links {
   display: flex;          /* list item jadi horizontal */
@@ -507,13 +540,43 @@ a {
 /* ── MOBILE (max 767px) ─────────────────────── */
 @media (max-width: 767px) {
 
-  /* Navbar: sembunyikan menu, tampilkan hamburger (sederhana) */
+  /* Navbar: tampilkan hamburger */
   .navbar {
     padding: 0 20px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: flex;
+    order: 2; /* letakkan setelah logo */
   }
 
   .navbar__links {
-    display: none; /* sembunyikan menu di mobile */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #3a3a3a;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 10;
+  }
+
+  .menu-toggle:checked ~ .navbar__links {
+    max-height: 300px; /* tinggi cukup untuk menu */
+  }
+
+  .navbar__links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar__cta {
+    display: none; /* sembunyikan hire me di mobile */
   }
 
   /* Hero: font lebih kecil */
