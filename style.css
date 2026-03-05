@@ -203,12 +203,14 @@ a {
   cursor: pointer;
   gap: 4px;
   padding: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 
 .hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
+  width: 30px;
+  height: 4px;
+  background-color: #00d4ff;
   transition: 0.3s;
   transform-origin: center;
 }
