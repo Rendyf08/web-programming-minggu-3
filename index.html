@@ -30,7 +30,24 @@
 <div class="navbar__cta">
       <a href="#" class="btn-primary">Hire Me</a>
     </div>
+
+    <!-- Tambahkan di dalam <nav> atau <header> kamu -->
+<button id="dark-toggle" class="dark-btn">🌙 Dark Mode</button>
+
+<section id="about">
+  <h2>About Me</h2>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+</section>
+
   </nav>
+  
 
   <!-- ── HERO SECTION ────────────────── -->
   <section class="hero" id="home">
@@ -50,6 +67,17 @@
       </div>
     </div>
   </section>
+
+  <section class="counter-section">
+  <h2>Berapa Kali Kamu Minum Air Hari Ini?</h2>
+  <div class="counter-container">
+    <button id="btn-kurang" class="counter-btn">−</button>
+    <span id="angka-counter">0</span>
+    <button id="btn-tambah" class="counter-btn">+</button>
+  </div>
+  <p id="counter-pesan">Yuk mulai minum air!</p>
+</section>
+
 
   <!-- ── PERSONAL DATA ──────────────── -->
   <section class="personal-data" id="about">
@@ -356,7 +384,20 @@
         }
       });
     });
+
+    // Membuat navbar sticky saat scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 0) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    });
   </script>
+  <script src="script.js"></script>
+
+
  
 </body>
 </html>
